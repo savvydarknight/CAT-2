@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-container {
+  width: 80%;
+  max-width: 600px;
+  background-color: #d1cfcf;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  color: brown;
+  margin-bottom: 25px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.city-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  flex: 1;
+}
+
+.search-btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 3rem;
+}
+
+.location {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp-unit {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.weather-icon {
+  margin-left: 10px;
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 600;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 1.25rem;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.25rem;
+}
+
+.forecast-item .day {
+  font-weight: bold;
+  color: #ac236e;
+}
+
+.temp {
+  background: linear-gradient(to right, brown, rgb(120, 79, 79));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+footer a {
+  color: #ac236e;
+}

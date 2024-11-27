@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Account</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register Account</h1>
+      <form>
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" placeholder="Enter full name" />
+          <span class="error">User name must be at least 4 characters</span>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <span class="error">Password must be at least 4 characters</span>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Re-enter password"
+          />
+          <span class="error">Passwords do not match</span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Format: john@gmail.com" />
+          <span class="error">Invalid email format</span>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" placeholder="Format: 0XXX-XXX-XXX" />
+          <span class="error">Invalid phone number</span>
+        </div>
+        <div class="form-group">
+          <label for="zipcode">Zip Code:</label>
+          <input
+            type="text"
+            id="zipcode"
+            placeholder="Use 5 or 9 digits Zip Code"
+          />
+          <span class="error">Invalid Zip Code</span>
+        </div>
+        <div class="form-group">
+          <label for="card-type">Card Type:</label>
+          <select id="card-type">
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="AmEx">American Express</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="card-number">Card Number:</label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="Format: 1111-2222-3333-4444"
+          />
+          <span class="error">Invalid card number format</span>
+        </div>
+        <div class="form-group">
+          <label for="expiration">Expiration Date:</label>
+          <input type="text" id="expiration" placeholder="Format: YYYY-MM-DD" />
+          <span class="error">Invalid date format</span>
+        </div>
+        <div class="form-actions">
+          <button
+            type="button"
+            class="btn"
+            onclick="window.location.href='https://cictehro.netlify.app'"
+          >
+            Register
+          </button>
+
+          <button type="reset" class="btn clear">Clear Form</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
